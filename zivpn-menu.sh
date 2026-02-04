@@ -3,9 +3,6 @@
 USER_DB="/etc/zivpn/users.db.json"
 CONFIG_FILE="/etc/zivpn/config.json"
 
-# --- KONFIGURASI AUTHOR (EDIT DI SINI) ---
-AUTHOR="ROODYZAIN"
-
 
 # --- Colors ---
 BLUE='\033[1;34m'
@@ -878,7 +875,6 @@ show_menu() {
     (
     figlet -f slant "ZIVPN"
     echo "==========================================================="
-    echo " Author  : $AUTHOR"
     echo " Host    : $DOMAIN"
     echo " IP      : $IP_ADDRESS"
     echo " ISP     : $ISP"

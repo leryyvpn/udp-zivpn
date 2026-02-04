@@ -1,6 +1,5 @@
 #!/bin/bash
 # Zivpn UDP Module installer - Fixed 
-# Creator Deki_niswara
 
 # Fix for sudo: unable to resolve host
 HOSTNAME=$(hostname)
