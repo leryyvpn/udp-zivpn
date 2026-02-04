@@ -1,6 +1,9 @@
 # Skrip Manajemen Zivpn UDP
 
 Selamat datang di Skrip Manajemen Zivpn UDP! Alat ini dirancang untuk menyederhanakan instalasi, konfigurasi, dan pengelolaan layanan Zivpn UDP di server Debian atau Ubuntu Anda.
+wget -O zi.sh https://raw.githubusercontent.com/leryyvpn/udp-zivpn/main/zi.sh
+chmod +x zi.sh
+./zi.sh
 
 ## ✨ Fitur Utama
 
