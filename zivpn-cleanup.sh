@@ -71,5 +71,3 @@ sudo systemctl restart zivpn.service > /dev/null 2>&1
 
 # echo "Proses pembersihan selesai."
 exit 0
-
-rm -f /etc/limit-ip/$username 2>/dev/null

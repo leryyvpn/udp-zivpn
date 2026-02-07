@@ -330,12 +330,6 @@ add_account() {
     read duration
     [[ -z "$duration" ]] && duration=30
 
-
-echo -n -e "${PROMPT_COLOR} -> Masukkan Limit IP:${NC} "
-read limitip
-mkdir -p /etc/limit-ip
-echo "$limitip" > /etc/limit-ip/$username
-
     expiry_timestamp=$(date -d "+$duration days" +%s)
     expiry_readable=$(date -d "@$expiry_timestamp" '+%Y-%m-%d %H:%M:%S')
 
@@ -946,18 +940,3 @@ while true; do
             ;;
     esac
 done
-
-# ===============================
-# LIMIT IP MENU
-# ===============================
-limit_ip_menu() {
-    clear
-    echo "--- LIMIT IP STATUS ---"
-    if [ -f /var/log/limit-ip.log ]; then
-        cat /var/log/limit-ip.log | tail -n 20
-    else
-        echo "Belum ada user terblokir."
-    fi
-    echo ""
-    read -p "Tekan Enter untuk kembali..."
-}
