@@ -330,6 +330,12 @@ add_account() {
     read duration
     [[ -z "$duration" ]] && duration=30
 
+
+echo -n -e "${PROMPT_COLOR} -> Masukkan Limit IP:${NC} "
+read limitip
+mkdir -p /etc/limit-ip
+echo "$limitip" > /etc/limit-ip/$username
+
     expiry_timestamp=$(date -d "+$duration days" +%s)
     expiry_readable=$(date -d "@$expiry_timestamp" '+%Y-%m-%d %H:%M:%S')
 
