@@ -946,3 +946,18 @@ while true; do
             ;;
     esac
 done
+
+# ===============================
+# LIMIT IP MENU
+# ===============================
+limit_ip_menu() {
+    clear
+    echo "--- LIMIT IP STATUS ---"
+    if [ -f /var/log/limit-ip.log ]; then
+        cat /var/log/limit-ip.log | tail -n 20
+    else
+        echo "Belum ada user terblokir."
+    fi
+    echo ""
+    read -p "Tekan Enter untuk kembali..."
+}
