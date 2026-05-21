@@ -3,9 +3,6 @@
 USER_DB="/etc/zivpn/users.db.json"
 CONFIG_FILE="/etc/zivpn/config.json"
 
-# --- KONFIGURASI AUTHOR (EDIT DI SINI) ---
-AUTHOR="ROODYZAIN"
-
 
 # --- Colors ---
 BLUE='\033[1;34m'
